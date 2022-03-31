@@ -1,11 +1,11 @@
 # MachineLearningStage2
 Comparing Polynomial Regression of Different Degrees with Linear Regression for World Population Prediction
 
-##Introduction
+# Introduction
 
 Population increase is an increasingly intriguing and concerning factor in modern day geopolitics. As the wealth gap between rich and poor increases, the number of people being born into developing countries as opposed to developed countries is an important factor to know. Furthermore certain countries may be experiencing decreasing populations and as such 
 
-##Problem Formulation
+## Problem Formulation
 
 In this assignment I will propose a machine learning model to predict the world population. The World's Bank dataset does not contain data points for 2021 countries' populations and as such the population of 2021 will be included in the prediction.
 
