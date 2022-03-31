@@ -1,7 +1,7 @@
 # MachineLearningStage2
 Comparing Polynomial Regression of Different Degrees with Linear Regression for World Population Prediction
 
-# Introduction
+## Introduction
 
 Population increase is an increasingly intriguing and concerning factor in modern day geopolitics. As the wealth gap between rich and poor increases, the number of people being born into developing countries as opposed to developed countries is an important factor to know. Furthermore certain countries may be experiencing decreasing populations and as such 
 
@@ -18,7 +18,7 @@ Future world population at a certain year
 
 In the case of this ML problem I will be trying to predict the future global population. The features will be the year (from 1960-2020) and the labels will be the world population at this time.
 
-##Methods
+## Methods
 
 The dataset I used is from the World Bank and as such is reliable. The page with the csv can be found at the following link: https://data.worldbank.org/indicator/SP.POP.TOTL. The dataset contains a list of populations for all countries, continents and many regions of the world as well as a summed total population of all countries and regions in the column ‘World’ (what I used). Although the dataset contains a list of populations from 1960 to 2020 for every country, I have decided to use 60 data points which is the sum of countries' population in the column ‘World’ of the dataset. Furthermore I had to transpose the dataset in order for the year to be a row instead of a column. While this may seem like a small set of data points, using more data from the dataset (i.e for each individual country) would not improve accuracy since I am just using the sum of these points instead. 
 
@@ -62,7 +62,7 @@ Because of this, Polynomial Regression with Degree=3 is the chosen model for thi
 
 The test set comprises 25% of the total data points from the dataset. As the chosen method is Polynomial Regression (Degree=3) this was used with the test data and yielded an error of 792354426379851.6.
 
-##Conclusion
+## Conclusion
 
 The results obtained from the ML model indicate that Polynomial Regression is the best model for predicting future world population. However for Linear Regression the training error is greater than validation error whereas for Polynomial Regression, although both losses are lower than for Linear Regression, the validation error is higher than the training error. This means for Polynomial Regression the model is overfitting. This could be a result of having a small dataset where a few outliers/extreme data points skew the results massively and since I am only using 15 data points (25%) for validation, this could easily occur. To try and improve this I could try to split the data in different proportions and use a much larger dataset since mine only has 60 data points.
 
